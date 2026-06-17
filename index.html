@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Energy Market Trends &amp; Global Events</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<div id="loading">
+  <div class="loader-ring"></div>
+  <div class="loader-text">Loading market data…</div>
+</div>
+
+<div id="app">
+
+  <header id="topbar">
+    <div class="logo">
+      Energy Market <span>Trends &amp; Global Events</span>
+    </div>
+    <div class="topbar-meta"></div>
+  </header>
+
+  <div id="main">
+
+    <aside id="left-panel">
+      <div id="panel-scroll">
+
+        <div class="ctrl-section">
+          <div class="ctrl-section-header">
+            <span>Date Range</span>
+            <span class="chevron">▾</span>
+          </div>
+          <div class="ctrl-section-body">
+            <div class="date-inputs">
+              <div class="date-input-row">
+                <label>From</label>
+                <input type="date" id="date-start" />
+              </div>
+              <div class="date-input-row">
+                <label>To</label>
+                <input type="date" id="date-end" />
+              </div>
+            </div>
+            <div class="quick-ranges">
+              <button class="quick-range-btn" data-range="all">All</button>
+              <button class="quick-range-btn" data-range="20y">20Y</button>
+              <button class="quick-range-btn" data-range="10y">10Y</button>
+              <button class="quick-range-btn" data-range="5y">5Y</button>
+              <button class="quick-range-btn" data-range="3y">3Y</button>
+              <button class="quick-range-btn" data-range="1y">1Y</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Commodities -->
+        <div class="ctrl-section">
+          <div class="ctrl-section-header">
+            <span>Commodities</span>
+            <span class="chevron">▾</span>
+          </div>
+          <div class="ctrl-section-body">
+            <div class="checkbox-group">
+
+              <label class="checkbox-item">
+                <input type="checkbox" class="commodity-cb" data-key="CL_F" checked />
+                <span class="cb-box" style="color:var(--col-wti)"></span>
+                <span class="cb-label">
+                  <span class="cb-dot" style="background:var(--col-wti)"></span>
+                  WTI Crude Oil
+                </span>
+              </label>
+
+              <label class="checkbox-item">
+                <input type="checkbox" class="commodity-cb" data-key="BZ_F" checked />
+                <span class="cb-box" style="color:var(--col-brent)"></span>
+                <span class="cb-label">
+                  <span class="cb-dot" style="background:var(--col-brent)"></span>
+                  Brent Crude
+                </span>
+              </label>
+
+              <label class="checkbox-item">
+                <input type="checkbox" class="commodity-cb" data-key="HO_F" checked />
+                <span class="cb-box" style="color:var(--col-heating)"></span>
+                <span class="cb-label">
+                  <span class="cb-dot" style="background:var(--col-heating)"></span>
+                  Heating Oil
+                </span>
+              </label>
+
+              <label class="checkbox-item">
+                <input type="checkbox" class="commodity-cb" data-key="RB_F" checked />
+                <span class="cb-box" style="color:var(--col-gas)"></span>
+                <span class="cb-label">
+                  <span class="cb-dot" style="background:var(--col-gas)"></span>
+                  RBOB Gasoline
+                </span>
+              </label>
+
+              <label class="checkbox-item">
+                <input type="checkbox" class="commodity-cb" data-key="NG_F" checked />
+                <span class="cb-box" style="color:var(--col-natgas)"></span>
+                <span class="cb-label">
+                  <span class="cb-dot" style="background:var(--col-natgas)"></span>
+                  Natural Gas
+                </span>
+              </label>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Price type -->
+        <div class="ctrl-section">
+          <div class="ctrl-section-header">
+            <span>Price Type</span>
+            <span class="chevron">▾</span>
+          </div>
+          <div class="ctrl-section-body">
+            <div class="radio-group">
+              <label class="radio-item">
+                <input type="radio" class="price-type-radio" name="price-type" value="close" checked />
+                <span class="rb-circle"></span>
+                <span class="rb-label">Close</span>
+              </label>
+              <label class="radio-item">
+                <input type="radio" class="price-type-radio" name="price-type" value="open" />
+                <span class="rb-circle"></span>
+                <span class="rb-label">Open</span>
+              </label>
+              <label class="radio-item">
+                <input type="radio" class="price-type-radio" name="price-type" value="high" />
+                <span class="rb-circle"></span>
+                <span class="rb-label">High</span>
+              </label>
+              <label class="radio-item">
+                <input type="radio" class="price-type-radio" name="price-type" value="low" />
+                <span class="rb-circle"></span>
+                <span class="rb-label">Low</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event filters -->
+        <div class="ctrl-section">
+          <div class="ctrl-section-header">
+            <span>Event Categories</span>
+            <span class="chevron">▾</span>
+          </div>
+          <div class="ctrl-section-body">
+            <div class="checkbox-group">
+
+              <label class="checkbox-item">
+                <input type="checkbox" class="event-cat-cb" data-cat="Economy" checked />
+                <span class="cb-box" style="color:var(--cat-economy)"></span>
+                <span class="cb-label">
+                  <span class="cb-dot" style="background:var(--cat-economy)"></span>
+                  Economy
+                </span>
+              </label>
+
+              <label class="checkbox-item">
+                <input type="checkbox" class="event-cat-cb" data-cat="Geopolitics" checked />
+                <span class="cb-box" style="color:var(--cat-geo)"></span>
+                <span class="cb-label">
+                  <span class="cb-dot" style="background:var(--cat-geo)"></span>
+                  Geopolitics
+                </span>
+              </label>
+
+              <label class="checkbox-item">
+                <input type="checkbox" class="event-cat-cb" data-cat="Market" checked />
+                <span class="cb-box" style="color:var(--cat-market)"></span>
+                <span class="cb-label">
+                  <span class="cb-dot" style="background:var(--cat-market)"></span>
+                  Market
+                </span>
+              </label>
+
+              <label class="checkbox-item">
+                <input type="checkbox" class="event-cat-cb" data-cat="Environment &amp; Infrastructure" checked />
+                <span class="cb-box" style="color:var(--cat-env)"></span>
+                <span class="cb-label">
+                  <span class="cb-dot" style="background:var(--cat-env)"></span>
+                  Env &amp; Infrastructure
+                </span>
+              </label>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Chart options -->
+        <div class="ctrl-section">
+          <div class="ctrl-section-header">
+            <span>Visualization</span>
+            <span class="chevron">▾</span>
+          </div>
+          <div class="ctrl-section-body">
+
+            <div class="toggle-row">
+              <label for="toggle-event-markers">Event Markers</label>
+              <label class="toggle">
+                <input type="checkbox" id="toggle-event-markers" checked />
+                <span class="track"></span>
+                <span class="thumb"></span>
+              </label>
+            </div>
+
+            <div class="toggle-row">
+              <label for="toggle-event-labels">Event Labels</label>
+              <label class="toggle">
+                <input type="checkbox" id="toggle-event-labels" checked />
+                <span class="track"></span>
+                <span class="thumb"></span>
+              </label>
+            </div>
+
+            <div class="toggle-row">
+              <label for="toggle-volume">Volume Bars</label>
+              <label class="toggle">
+                <input type="checkbox" id="toggle-volume" checked />
+                <span class="track"></span>
+                <span class="thumb"></span>
+              </label>
+            </div>
+
+            <div class="toggle-row">
+              <label for="toggle-ma30">Moving Avg (30)</label>
+              <label class="toggle">
+                <input type="checkbox" id="toggle-ma30" />
+                <span class="track"></span>
+                <span class="thumb"></span>
+              </label>
+            </div>
+
+            <div class="toggle-row">
+              <label for="toggle-ma90">Moving Avg (90)</label>
+              <label class="toggle">
+                <input type="checkbox" id="toggle-ma90" />
+                <span class="track"></span>
+                <span class="thumb"></span>
+              </label>
+            </div>
+
+            <div class="toggle-row">
+              <label for="toggle-normalize">Normalize (base 100)</label>
+              <label class="toggle">
+                <input type="checkbox" id="toggle-normalize" />
+                <span class="track"></span>
+                <span class="thumb"></span>
+              </label>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <button id="reset-zoom-btn">↺&nbsp; Reset Zoom</button>
+
+    </aside>
+
+    <div id="h-resizer" title="Drag to resize panel"></div>
+
+    <div id="right-col">
+
+      <div id="chart-wrapper">
+
+        <div id="chart-title-bar">
+          <div id="chart-title">Energy Market Trends &amp; Global Events</div>
+        </div>
+
+        <div id="chart-svg-container">
+          <svg id="chart-svg"></svg>
+        </div>
+
+        <div id="crosshair-tooltip"></div>
+        <div id="event-tooltip"></div>
+
+        <div id="event-detail-card"></div>
+
+      </div>
+
+      <div id="v-resizer" title="Drag to resize"></div>
+
+      <div id="table-section">
+        <div id="table-header">
+          <span id="table-title">List of geopolitical events</span>
+          <input type="text" id="table-search" placeholder="Search events…" autocomplete="off" />
+          <div class="table-cat-filter"><!-- built by table.js --></div>
+          <span id="table-count"></span>
+        </div>
+
+        <div id="table-container">
+          <table id="events-table">
+            <thead>
+              <tr>
+                <th data-col="date"     style="width:110px">Date</th>
+                <th data-col="category" style="width:140px">Category</th>
+                <th data-col="name"     style="width:200px">Event Name</th>
+                <th data-col="desc">Description</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+Date,Event Name,Category,Description
+2001-09-11,9/11 Terrorist Attacks,Geopolitics,Short-term demand shock due to halted flights and economic uncertainty.
+2001-12-11,China WTO Integration,Economy,China's deepening WTO integration drove rapid export growth and global supply chain shifts.
+2003-03-20,US Invasion of Iraq,Geopolitics,Fears of supply disruption from the Middle East pushed oil prices sharply higher.
+2008-07-11,Oil Price Peak ($147),Market,Speculation and strong demand from China push Brent to all-time highs.
+2008-09-15,Global Financial Crisis,Economy,"Lehman Brothers collapse triggered a massive global economic downturn, causing a sharp and sustained fall in energy demand."
+2010-04-20,Deepwater Horizon Oil Spill,Environment & Infrastructure,"Massive oil spill in the Gulf of Mexico, leading to tightened offshore drilling regulations."
+2010-05-02,European Sovereign Debt Crisis,Economy,Eurozone debt crisis threatened economic stability and dampened energy demand across Europe.
+2010-12-18,Arab Spring Begins,Geopolitics,Political upheavals across the MENA region disrupted oil production and raised supply fears.
+2011-02-15,Arab Spring & Libyan Civil War,Geopolitics,"Armed conflict in Libya severely disrupted the country's oil production and exports, amplifying regional supply fears."
+2011-03-19,NATO Intervention in Libya,Geopolitics,"Military intervention by NATO forces escalated the conflict, extending oil supply disruptions."
+2012-01-23,EU Embargo on Iranian Oil,Geopolitics,"European Union agreed to ban imports of Iranian crude oil, tightening global supply."
+2014-03-18,Russia Annexes Crimea,Geopolitics,"Russia annexed Crimea, leading to Western sanctions and heightened geopolitical tensions in energy markets."
+2014-06-20,Oil Price Collapse,Market,"Crude oil prices fell from over $100 to below $50 per barrel, impacting oil-exporting economies worldwide."
+2014-11-27,OPEC Price War Begins,Market,"Saudi Arabia blocked production cuts to defend market share against US shale, triggering a major multi-year price crash."
+2015-03-26,Saudi-Led Intervention in Yemen,Geopolitics,Military intervention in Yemen raised fears of regional instability in the oil-rich Middle East.
+2015-06-12,Chinese Stock Market Crash,Economy,Major sell-off in Chinese equities caused global market volatility and demand uncertainty.
+2016-01-16,Iran Nuclear Sanctions Lifted,Geopolitics,"JCPOA implementation lifted international sanctions on Iran, allowing its oil back into the global market."
+2016-06-23,Brexit Referendum,Geopolitics,"UK voted to leave the EU, causing sterling depreciation and trade uncertainty that pressured energy markets."
+2016-09-28,OPEC Algiers Agreement,Market,OPEC members reached a preliminary agreement to limit crude oil production for the first time since 2008.
+2016-11-30,First OPEC+ Production Cut,Market,OPEC and non-OPEC producers formally agreed to cut oil production to reduce oversupply and stabilise prices.
+2017-06-05,Qatar Diplomatic Crisis,Geopolitics,"Several Arab nations severed diplomatic ties with Qatar, increasing regional tensions in a key LNG producer."
+2018-03-22,US-China Trade War,Economy,Escalating tariffs between the US and China disrupted global trade flows and weakened demand expectations.
+2018-05-08,US Withdraws from Iran Nuclear Deal,Geopolitics,"The US reinstated sanctions on Iran's oil exports, removing significant supply from global markets."
+2019-09-14,Saudi Aramco Facility Attack,Geopolitics,Drone attacks on Saudi oil facilities temporarily knocked out over 5% of global oil supply.
+2020-01-03,US Kills Iranian General Soleimani,Geopolitics,"US drone strike killed Iranian general Qasem Soleimani, spiking fears of a broader Middle East conflict."
+2020-03-08,Saudi-Russia Oil Price War,Market,"Failure to agree on production cuts led Saudi Arabia and Russia to flood the market with cheap oil, sending prices crashing."
+2020-03-11,COVID-19 Pandemic,Economy,Global pandemic caused widespread economic disruption and a historic collapse in energy demand.
+2020-04-20,WTI Crude Prices Turn Negative,Market,"Unprecedented demand destruction from COVID-19 lockdowns caused US crude futures to drop below zero, reaching -$37."
+2021-03-23,Global Supply Chain Crisis,Economy,Post-pandemic supply chain bottlenecks caused widespread shortages and drove price increases across commodities.
+2021-03-23,Suez Canal Blocked by Ever Given,Environment & Infrastructure,"The Ever Given container ship ran aground, blocking a vital global shipping chokepoint for six days."
+2021-10-04,Global Energy Crisis,Market,Surging post-pandemic demand and supply constraints led to massive price spikes in natural gas and oil.
+2022-02-24,Russia Invades Ukraine,Geopolitics,"Full-scale invasion of Ukraine triggered sweeping Western sanctions on Russian energy exports, causing massive supply fears and price spikes."
+2022-03-08,US Bans Russian Oil Imports,Geopolitics,"The US announced a total ban on imports of Russian oil, gas, and coal in response to the Ukraine invasion."
+2022-03-16,Global Inflation Surge,Economy,Energy and food price shocks from the Ukraine war drove inflation to multi-decade highs across major economies.
+2022-06-01,EU Oil Embargo on Russia,Geopolitics,"EU leaders agreed to ban most imports of Russian oil, fundamentally re-routing global energy trade."
+2022-12-05,G7 Price Cap on Russian Oil,Geopolitics,G7 nations imposed a $60/bbl price cap on Russian seaborne crude to limit Moscow's war revenues.
+2023-04-02,OPEC+ Surprise Production Cuts,Market,OPEC+ announced unexpected voluntary production cuts of over 1 million barrels per day.
+2023-10-07,Israel-Hamas War,Geopolitics,"Hamas surprise attack on Israel sparked a major conflict, raising fears of broader Middle Eastern escalation affecting supply routes."
+2024-01-12,Red Sea Shipping Crisis,Geopolitics,"Houthi attacks on commercial vessels in the Red Sea disrupted major energy trade routes, forcing ships to reroute around Africa."
+2024-04-14,Iran Launches Drone Attack on Israel,Geopolitics,Direct confrontation between Iran and Israel sharply increased the geopolitical risk premium on oil.
+2024-06-06,Global Monetary Policy Pivot,Economy,Major central banks began cutting interest rates after a prolonged tightening cycle aimed at curbing inflation.
+2024-08-26,Libya Oil Production Halt,Geopolitics,Political standoff over the central bank prompted eastern Libyan authorities to shut down the country's oil production.
+2024-10-01,Red Sea Tanker Attacks Escalate,Geopolitics,Intensifying Houthi attacks on shipping in the Red Sea further disrupted global energy supply chains.
+2025-01-20,US Policy Shift on Domestic Drilling,Geopolitics,"New US administration shifted energy policy towards domestic drilling expansion and deregulation, boosting supply expectations."
+2025-02-20,Middle East Tanker Security Crisis,Geopolitics,Escalating attacks on tankers in key Middle Eastern chokepoints disrupted oil flows and raised insurance costs.
+2025-06-10,OPEC+ Additional Production Cuts,Market,OPEC+ announced further production cuts in response to weakening global demand and rising non-OPEC supply.
+2025-10-28,World Bank Warns of 2026 Oil Glut,Market,"Major institutions forecast a significant oversupply of oil in 2026, putting sustained downward pressure on prices."
+2025-11-18,Expanded Iran Oil Sanctions,Geopolitics,New rounds of strict international sanctions further isolated Iran's oil sector from global markets.
+2026-02-28,US-Israel Strikes on Iranian Infrastructure,Geopolitics,Direct military strikes on Iranian energy infrastructure severely impacted regional oil supply capabilities.
+2026-03-01,OPEC+ Extends Production Cuts,Market,Producers extended voluntary output cuts to combat the anticipated 2026 supply glut.
+2026-03-09,Closure of Strait of Hormuz,Geopolitics,Geopolitical escalation led to the closure of the world's most critical oil transit chokepoint.
